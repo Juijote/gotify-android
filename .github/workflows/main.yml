@@ -11,10 +11,8 @@ jobs:
       - uses: actions/setup-java@v1
         with:
           java-version: 17
-      - if: ${{ !startsWith(github.ref, 'refs/tags/v') }}
-        run: ./gradlew build --stacktrace
-      - if: ${{ startsWith(github.ref, 'refs/tags/v') }}
-        run: |
+      - run: ./gradlew build --stacktrace
+      - run: |
           export RELEASE_STORE_FILE=$(pwd)/gotfy-release-key.jks
           echo $RELEASE_KEY | base64 -d > $RELEASE_STORE_FILE
           ./gradlew -Psign build --stacktrace
@@ -24,8 +22,7 @@ jobs:
           RELEASE_STORE_PASSWORD: ${{ secrets.STOREPASS }}
           RELEASE_KEY_ALIAS: gotify-release-key
           RELEASE_KEY_PASSWORD: ${{ secrets.KEYPASS }}
-      - if: ${{ startsWith(github.ref, 'refs/tags/v') }}
-        uses: svenstaro/upload-release-action@v2
+      - uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GOTIFY }}
           file: app/build/outputs/apk/release/Gotify.apk
