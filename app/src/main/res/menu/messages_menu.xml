@@ -36,6 +36,12 @@
             android:orderInCategory="2"
             android:id="@+id/logout"
             android:title="@string/logout" />
+        <item
+            android:id="@+id/juij"
+            android:title="@+id/juij"
+            app:actionViewClass="android.widget.TextView"
+            app:showAsAction="always"
+            android:autoLink="web" />
     </group>
 
 </menu>

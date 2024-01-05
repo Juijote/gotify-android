@@ -62,7 +62,7 @@
             android:name=".sharing.ShareActivity"
             android:exported="true"
             android:theme="@style/AppTheme.NoActionBar"
-            android:label="Push message">
+            android:label="推送消息">
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />
                 <category android:name="android.intent.category.DEFAULT" />

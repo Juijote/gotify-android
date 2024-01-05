@@ -283,6 +283,16 @@ internal class MessagesActivity :
         } else if (id == R.id.push_message) {
             val intent = Intent(this@MessagesActivity, ShareActivity::class.java)
             startActivity(intent)
+        } else if (id == R.id.juij) {
+            // #汉化修改 获取 juij 菜单项
+            val juijMenuItem = binding.navigationView.menu.findItem(R.id.juij)
+
+            // 修改菜单项标题
+            juijMenuItem.title = "汉化更新"
+
+            // 设置打开链接的 Intent
+            juijMenuItem.intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://juij.eu.org/#Gotify"))
+            startActivity(juijMenuItem.intent)
         }
         binding.drawerLayout.closeDrawer(GravityCompat.START)
         return true
