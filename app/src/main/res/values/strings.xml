@@ -2,12 +2,12 @@
     <string name="navigation_drawer_open">打开导航菜单</string>
     <string name="navigation_drawer_close">关闭导航菜单</string>
     <string name="nav_header_desc">菜单标题</string>
-    <string name="found_gotify_version">已连接到 Gotify 服务端 v%s</string>
+    <string name="found_gotify_version">Gotify 服务端 v%s</string>
     <string name="version_failed_status_code">对 \'%1$s\' 的请求失败，状态代码为 %2$d</string>
     <string name="version_failed">对 \'%1$s\' 请求失败， %2$s。</string>
     <string name="wronguserpw">没有使用此用户名和密码的用户</string>
     <string name="create_client_title">客户端名称</string>
-    <string name="create_client_message">为你的会话选择一个名称</string>
+    <string name="create_client_message">为会话选择一个名称</string>
     <string name="create">创建</string>
     <string name="cancel">取消</string>
     <string name="create_client_failed">创建客户端失败</string>
@@ -66,7 +66,7 @@
     <string name="no_certificate_selected">未选择证书</string>
     <string name="remove_ca_certificate">删除 CA 证书</string>
     <string name="warning">警告</string>
-    <string name="http_warning">使用 HTTP 不安全，建议使用 HTTPS，使用你最喜欢的搜索引擎来获取有关这个的更多信息。</string>
+    <string name="http_warning">使用 HTTP 不安全，建议使用 HTTPS，使用搜索引擎来获取有关这个的更多信息。</string>
     <string name="i_understand">已了解</string>
     <string name="no_messages_yet">还没有消息，\n向 Gotify 发送消息\n它会显示在此处。</string>
     <string name="title_activity_settings">设置</string>
@@ -76,7 +76,7 @@
     <string name="setting_message_layout">消息布局</string>
     <string name="setting_key_message_layout">message_layout</string>
     <string name="setting_restart_dialog_title">重新启动应用程序？</string>
-    <string name="setting_restart_dialog_message">更改将在下次应用程序启动时生效，\n\n你想立即重启吗？</string>
+    <string name="setting_restart_dialog_message">更改将在下次应用程序启动时生效，\n\n想立即重启吗？</string>
     <string name="setting_restart_dialog_button1">重启</string>
     <string name="setting_restart_dialog_button2">暂后</string>
     <string name="setting_time_format">时间格式</string>
@@ -99,7 +99,7 @@
     <string name="push_priority_hint">优先级</string>
     <string name="push_missing_app_info">服务器上没有可用于推送消息的应用程序。</string>
     <string name="message_copied_to_clipboard">内容复制到剪贴板</string>
-    <string name="not_loggedin_share">无法分享到 Gotify，因为你尚未登录。</string>
+    <string name="not_loggedin_share">无法共享到 Gotify，因为尚未登录。</string>
     <string name="action_dialog_missing">缺少网址</string>
     <string name="action_dialog_message">收到一条带有网址的消息:</string>
     <string name="action_dialog_button_open">打开</string>
