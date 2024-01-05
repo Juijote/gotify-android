@@ -108,8 +108,8 @@
     <string name="websocket_not_connected">未连接</string>
     <string name="websocket_reconnect">尝试重新连接</string>
     <plurals name="websocket_retry_interval">
-        <item quantity="one">%d 分钟内</item>
-        <item quantity="other">%d 分钟后</item>
+        <item quantity="one">在 %d 分钟内</item>
+        <item quantity="other">在 %d 分钟后</item>
     </plurals>
 
     <string name="notification_channel_title_foreground">Gotify 前台通知</string>

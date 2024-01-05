@@ -16,7 +16,7 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
         signingConfig signingConfigs.debug
-        resValue "string", "app_name", "Gotify-ZH"
+        resValue "string", "app_name", "Gotify"
     }
     buildTypes {
         release {
