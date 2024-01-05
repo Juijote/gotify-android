@@ -50,10 +50,6 @@ android {
     }
 }
 
-if (project.hasProperty('sign')) {
-    android.buildTypes.release.signingConfig android.signingConfigs.release
-}
-
 dependencies {
     implementation project(':client')
     implementation 'androidx.appcompat:appcompat:1.6.1'

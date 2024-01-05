@@ -2,7 +2,7 @@
     <string name="navigation_drawer_open">打开导航菜单</string>
     <string name="navigation_drawer_close">关闭导航菜单</string>
     <string name="nav_header_desc">菜单标题</string>
-    <string name="found_gotify_version">找到 Gotify v%s</string>
+    <string name="found_gotify_version">已连接到 Gotify 服务端 v%s</string>
     <string name="version_failed_status_code">对 \'%1$s\' 的请求失败，状态代码为 %2$d</string>
     <string name="version_failed">对 \'%1$s\' 请求失败， %2$s。</string>
     <string name="wronguserpw">没有使用此用户名和密码的用户</string>
@@ -60,7 +60,7 @@
     <string name="websocket_listening">已连接</string>
     <string name="websocket_could_not_connect">无法连接</string>
     <string name="websocket_init">正在初始化</string>
-    <string name="versions">Gotify 客户端: v%1$s [Juij] 汉化\n Gotify 服务端: v%2$s\n汉化更新: https://juij.eu.org/#Gotify</string>
+    <string name="versions">Gotify 客户端: v%1$s [Juij] 汉化\nGotify 服务端: v%2$s\n汉化更新: https://juij.eu.org/#Gotify</string>
     <string name="advanced_settings">高级设置</string>
     <string name="done">完成</string>
     <string name="no_certificate_selected">未选择证书</string>
