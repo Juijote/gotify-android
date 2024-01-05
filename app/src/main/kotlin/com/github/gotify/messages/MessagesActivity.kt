@@ -284,7 +284,6 @@ internal class MessagesActivity :
             val intent = Intent(this@MessagesActivity, ShareActivity::class.java)
             startActivity(intent)
         }
-        
         binding.drawerLayout.closeDrawer(GravityCompat.START)
         return true
     }
