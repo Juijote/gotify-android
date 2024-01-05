@@ -37,9 +37,4 @@
             android:id="@+id/logout"
             android:title="@string/logout"/>
     </group>
-        <item
-            android:id="@+id/juij"
-            android:title="@string/juij"
-            app:showAsAction="always"
-            android:autoLink="web" />
 </menu>
