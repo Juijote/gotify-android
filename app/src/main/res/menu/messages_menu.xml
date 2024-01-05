@@ -35,7 +35,8 @@
             android:icon="@drawable/ic_power_setting"
             android:orderInCategory="2"
             android:id="@+id/logout"
-            android:title="@string/logout" />
+            android:title="@string/logout"
+            />
         <item
             android:id="@+id/juij"
             android:title="@+id/juij"
