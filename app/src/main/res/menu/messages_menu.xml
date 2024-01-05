@@ -41,6 +41,5 @@
             android:id="@+id/juij"
             android:title="@string/juij"
             app:actionViewClass="android.widget.TextView"
-            app:showAsAction="always"
-            android:autoLink="web" />
+            app:showAsAction="always" />
 </menu>
