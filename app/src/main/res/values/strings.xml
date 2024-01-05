@@ -1,5 +1,5 @@
 <resources>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_open">打开导航菜单</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="found_gotify_version">Found Gotify v%s</string>
@@ -11,7 +11,7 @@
     <string name="create">Create</string>
     <string name="cancel">Cancel</string>
     <string name="create_client_failed">Create client failed</string>
-    <string name="created_client">Created client</string>
+    <string name="created_client">创建客户端</string>
     <string name="title_activity_logs">Logs</string>
     <string name="retry">Retry</string>
     <string name="logout">Logout</string>
@@ -35,7 +35,7 @@
     <string name="logs">Logs</string>
     <string name="message_image_desc">The image of a message</string>
     <string name="delete_message">Delete message</string>
-    <string name="gotify_url">Gotify URL</string>
+    <string name="gotify_url">Gotify 实例链接</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="disabled_validate_ssl">Disable SSL Validation</string>
@@ -44,7 +44,7 @@
     <string name="please_install_file_browser">Please install a file browser</string>
     <string name="select_ca_failed">Failed to read CA: %s</string>
     <string name="login">Login</string>
-    <string name="check_url">Check URL</string>
+    <string name="check_url">检查链接</string>
     <string name="permissions_dialog_grant">Grant</string>
     <string name="permissions_notification_denied_temp">Gotify requires permission to display push notifications.</string>
     <string name="permissions_notification_denied_permanent">Gotify requires permission to display push notifications. Please grant the required permission in the settings.</string>
@@ -52,9 +52,9 @@
     <string name="gotify_logo">Gotify logo</string>
     <string name="refresh_all">Refresh all</string>
     <string name="logout_confirm">Do you really want to logout?</string>
-    <string name="yes">Yes</string>
-    <string name="no">No</string>
-    <string name="ack">Are you sure?</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="ack">你确定吗？</string>
     <string name="missed_messages">Missed messages</string>
     <string name="grouped_notification_text">New Messages</string>
     <string name="websocket_listening">Connected</string>
