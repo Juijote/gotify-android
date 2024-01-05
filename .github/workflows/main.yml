@@ -2,11 +2,7 @@
 name: 构建
 
 # 触发工作流程的事件，包括推送(push)和拉取请求(pull_request)
-on:
-  push:
-    branches:
-      - '*'
-  pull_request:
+on: [push, pull_request]
 
 # 工作流程的定义
 jobs:
@@ -41,5 +37,3 @@ jobs:
         with:
           repo_token: ${{ secrets.GOTIFY }}
           file: app/build/outputs/apk/release/Gotify.apk
-          # 覆盖已存在的发布
-          overwrite: true
