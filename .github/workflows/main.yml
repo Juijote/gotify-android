@@ -35,5 +35,5 @@ jobs:
       - name: 上传 Gotify APK
         uses: actions/upload-artifact@v3
         with:
-          name: Gotify-APK
+          name: Gotify
           path: app/build/outputs/apk/release/Gotify.apk
