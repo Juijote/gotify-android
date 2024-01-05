@@ -31,9 +31,9 @@ jobs:
           ./gradlew build --stacktrace
           cp app/build/outputs/apk/release/app-release.apk app/build/outputs/apk/release/Gotify.apk
       
-      # 步骤4: 使用 svenstaro/upload-release-action 动作上传构建的 APK 文件
+     # 步骤4: 使用 actions/upload-artifact@v3 动作上传构建的 APK 文件
       - name: 上传 Gotify APK
-        uses: svenstaro/upload-release-action@v2
+        uses: actions/upload-artifact@v3
         with:
-          repo_token: ${{ secrets.GOTIFY }}
-          file: app/build/outputs/apk/release/Gotify.apk
+          name: Gotify-APK
+          path: app/build/outputs/apk/release/Gotify.apk
