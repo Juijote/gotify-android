@@ -1,30 +1,41 @@
-on: [push, pull_request]
+# 工作流程名称
+name: 构建
 
-name: Build
+# 触发工作流程的事件，包括推送(push)和拉取请求(pull_request)
+on:
+  push:
+    branches:
+      - '*'
+  pull_request:
 
+# 工作流程的定义
 jobs:
+  # 任务名称
   check:
-    name: Check
+    # 任务显示名称
+    name: 代码检查
+    # 运行环境，此处选择 Ubuntu 最新版本
     runs-on: ubuntu-latest
+    
+    # 任务步骤
     steps:
+      # 使用 actions/checkout 动作检出代码
       - uses: actions/checkout@v2
+      
+      # 使用 actions/setup-java 动作设置 Java 环境
       - uses: actions/setup-java@v1
         with:
           java-version: 17
+          
+      # 运行 Gradle 构建命令
       - run: ./gradlew build --stacktrace
-      - run: |
-          export RELEASE_STORE_FILE=$(pwd)/gotfy-release-key.jks
-          echo $RELEASE_KEY | base64 -d > $RELEASE_STORE_FILE
-          ./gradlew -Psign build --stacktrace
-          cp app/build/outputs/apk/release/app-release.apk app/build/outputs/apk/release/Gotify.apk
-        env:
-          RELEASE_KEY: ${{ secrets.RELEASE_KEY }}
-          RELEASE_STORE_PASSWORD: ${{ secrets.STOREPASS }}
-          RELEASE_KEY_ALIAS: gotify-release-key
-          RELEASE_KEY_PASSWORD: ${{ secrets.KEYPASS }}
+      
+      # 使用 svenstaro/upload-release-action 动作上传构建的 APK 文件
       - uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GOTIFY }}
           file: app/build/outputs/apk/release/Gotify.apk
+          # 使用 GitHub ref 作为 tag
           tag: ${{ github.ref }}
+          # 覆盖已存在的发布
           overwrite: true
