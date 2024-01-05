@@ -2,7 +2,7 @@
     <string name="navigation_drawer_open">打开导航菜单</string>
     <string name="navigation_drawer_close">关闭导航菜单</string>
     <string name="nav_header_desc">菜单标题</string>
-    <string name="found_gotify_version">Gotify 服务端 v%s</string>
+    <string name="found_gotify_version">已连接到 Gotify 服务端 v%s</string>
     <string name="version_failed_status_code">对 \'%1$s\' 的请求失败，状态代码为 %2$d</string>
     <string name="version_failed">对 \'%1$s\' 请求失败， %2$s。</string>
     <string name="wronguserpw">没有使用此用户名和密码的用户</string>
@@ -20,7 +20,7 @@
     <string name="auth_failed">服务器在尝试获取当前用户时返回 401 错误，这可能是由于删除该会话的客户端造成的。</string>
     <string name="other_error">无法获取当前用户，服务器（%1$s）响应代码 %2$d：正文（前 200 个字符）：%3$s</string>
     <string name="user_action">需要用户操作</string>
-    <string name="websocket_closed_logout">请重新登录，身份验证令牌不再有效。</string>
+    <string name="websocket_closed_logout">请重新登录，身份验证令牌已失效。</string>
     <string name="websocket_closed">连接已关闭</string>
     <string name="grouped_message">断开连接时收到 %d 条消息</string>
     <string name="delete_all">删除所有消息</string>
@@ -44,7 +44,7 @@
     <string name="please_install_file_browser">请安装文件浏览器</string>
     <string name="select_ca_failed">读取 CA 失败: %s</string>
     <string name="login">登录</string>
-    <string name="check_url">检查地址</string>
+    <string name="check_url">连接</string>
     <string name="permissions_dialog_grant">授予</string>
     <string name="permissions_notification_denied_temp">Gotify 需要权限才能显示推送通知。</string>
     <string name="permissions_notification_denied_permanent">Gotify 需要权限才能显示推送通知，请在设置中授予所需的权限。</string>
@@ -54,7 +54,7 @@
     <string name="logout_confirm">真的要退出吗？</string>
     <string name="yes">是</string>
     <string name="no">否</string>
-    <string name="ack">确定吗？</string>
+    <string name="ack">确定？</string>
     <string name="missed_messages">错过的消息</string>
     <string name="grouped_notification_text">新消息</string>
     <string name="websocket_listening">已连接</string>
@@ -76,17 +76,17 @@
     <string name="setting_message_layout">消息布局</string>
     <string name="setting_key_message_layout">message_layout</string>
     <string name="setting_restart_dialog_title">重新启动应用程序？</string>
-    <string name="setting_restart_dialog_message">更改将在下次应用程序启动时生效，\n\n想立即重启吗？</string>
+    <string name="setting_restart_dialog_message">更改将在下次应用程序启动时生效，\n立即重启？</string>
     <string name="setting_restart_dialog_button1">重启</string>
     <string name="setting_restart_dialog_button2">暂后</string>
     <string name="setting_time_format">时间格式</string>
     <string name="setting_key_time_format">time_format</string>
     <string name="setting_notifications">通知</string>
-    <string name="setting_notification_channels">单独的通知栏位</string>
+    <string name="setting_notification_channels">分隔通知栏位</string>
     <string name="setting_key_notification_channels">notification_channels</string>
     <string name="setting_key_exclude_from_recent">exclude_from_recent</string>
-    <string name="setting_exclude_from_recent">从最近的内容中排除</string>
-    <string name="setting_intent_dialog_permission">显示权限</string>
+    <string name="setting_exclude_from_recent">不显示在最近的内容中</string>
+    <string name="setting_intent_dialog_permission">权限</string>
     <string name="setting_key_intent_dialog_permission">intent_dialog_permission</string>
     <string name="setting_summary_intent_dialog_permission">要始终显示接收消息，请授予将此应用程序显示在其他应用程序之上的权限。</string>
     <string name="setting_summary_intent_dialog_permission_granted">已授权</string>
