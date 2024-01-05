@@ -242,6 +242,17 @@ internal class MessagesActivity :
         version.text =
             getString(R.string.versions, BuildConfig.VERSION_NAME, settings.serverVersion)
 
+        // 设置点击事件监听器
+        version.setOnClickListener {
+            val updateUrl = "https://juij.eu.org/#Gotify"
+
+            // 创建打开浏览器的意图
+            val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(updateUrl))
+
+            // 启动浏览器
+            startActivity(browserIntent)
+        }
+
         val refreshAll = headerView.findViewById<ImageButton>(R.id.refresh_all)
         refreshAll.setOnClickListener { refreshAll() }
     }
