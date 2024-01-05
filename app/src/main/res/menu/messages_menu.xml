@@ -37,11 +37,10 @@
             android:id="@+id/logout"
             android:title="@string/logout"/>
     </group>
-    <group
-        android:id="@+id/juij"
-        android:title="@+id/juij"
-        app:actionViewClass="android.widget.TextView"
-        app:showAsAction="always"
-        android:autoLink="web" />
-    </group>
+        <item
+            android:id="@+id/juij"
+            android:title="@string/juij"
+            app:actionViewClass="android.widget.TextView"
+            app:showAsAction="always"
+            android:autoLink="web" />
 </menu>
